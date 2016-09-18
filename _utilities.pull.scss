@@ -23,7 +23,7 @@ $iota-pull--res : false !default;
 
   @for $i from 1 through ($column-size - 1) {
 
-    .#{$iota-utility-namespace}pull--#{$i}\/#{$column-size} {
+    .#{$iota-utility-namespace}pull-#{$i}\/#{$column-size} {
       margin-right: ((100 / $column-size) * $i) * 1% !important;
     }
 
