@@ -13,8 +13,9 @@
 
 // Options
 
-$iota-pull      : true;
-$iota-pull--res : false !default;
+$iota-pull            : true;
+$iota-pull-namespace  : pull;
+$iota-pull--res       : false !default;
 
 
 
@@ -23,7 +24,7 @@ $iota-pull--res : false !default;
 
   @for $i from 1 through ($column-size - 1) {
 
-    .#{$iota-utility-namespace}pull-#{$i}\/#{$column-size} {
+    .#{$iota-utility-namespace}#{$iota-pull-namespace}-#{$i}\/#{$column-size} {
       margin-right: ((100 / $column-size) * $i) * 1% !important;
     }
 
@@ -34,7 +35,7 @@ $iota-pull--res : false !default;
 
 
 
-// Responsive Push Utilities
+// Responsive Pull Utilities
 
 @if ($iota-pull--res == true) {
 
@@ -46,7 +47,7 @@ $iota-pull--res : false !default;
 
         @for $i from 1 through ($column-size - 1) {
 
-          .#{$iota-utility-namespace}pull-#{$i}\/#{$column-size}\@#{$name} {
+          .#{$iota-utility-namespace}#{$iota-pull-namespace}-#{$i}\/#{$column-size}\@#{$name} {
             margin-right: ((100 / $column-size) * $i) * 1% !important;
           }
 
@@ -57,5 +58,3 @@ $iota-pull--res : false !default;
     }
 
   }
-
-}
