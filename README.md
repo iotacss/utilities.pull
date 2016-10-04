@@ -20,7 +20,7 @@ npm install --save iotacss-pull
 ### Options ###
 
 ```
-$iota-pull-namespace  : pull !default;
+$iota-pull-namespace  : 'pull-' !default;
 $iota-pull--res       : false !default;
 ```
 
