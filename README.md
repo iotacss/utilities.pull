@@ -1,6 +1,6 @@
 # Pull Utility #
 
-The pull utility is responsive for handling grid's after offset.
+The pull utility is responsible for handling grid's after offset.
 
 
 ### Installation ###
